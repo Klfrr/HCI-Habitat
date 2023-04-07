@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: a5794e153144af64588b0f0880920471
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Coffee Healing
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 92da3908a7dc87646818d0f58fd9266b, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
