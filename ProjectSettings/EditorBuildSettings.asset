@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Habitat 3.unity
     guid: aa5617eca3c700745bb65b16a06a19fd
+  - enabled: 1
+    path: Assets/Scenes/Death Screen.unity
+    guid: b892b91f30ffd9f44818d5ec98ab9630
   m_configObjects: {}
