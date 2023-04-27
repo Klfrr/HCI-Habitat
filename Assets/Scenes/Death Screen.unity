@@ -627,7 +627,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Unfortunately your mythic has died.
+  m_Text: Unfortunately your Mythic has died.
 --- !u!222 &929129974
 CanvasRenderer:
   m_ObjectHideFlags: 0
