@@ -290,6 +290,8 @@ MonoBehaviour:
   hour: 0
   minutes: 0
   seconds: 0
+  hourThreshold: 16
+  savedData: {fileID: 11400000, guid: 86b4e6ef19e31004daefe31843180b39, type: 2}
 --- !u!1 &694351960
 GameObject:
   m_ObjectHideFlags: 0
@@ -471,6 +473,7 @@ GameObject:
   - component: {fileID: 751411635}
   - component: {fileID: 751411634}
   - component: {fileID: 751411633}
+  - component: {fileID: 751411636}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -527,6 +530,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &751411636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751411632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9413829ecd48b04e8bc6d2334b7ef3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SavedData: {fileID: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1095,6 +1111,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 280319686}
     m_Modifications:
+    - target: {fileID: 6446981493101158134, guid: 7c5e1b1dd4f706547bd8056be9f1eb13, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6446981493101158134, guid: 7c5e1b1dd4f706547bd8056be9f1eb13, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 751411636}
+    - target: {fileID: 6446981493101158134, guid: 7c5e1b1dd4f706547bd8056be9f1eb13, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 6446981493101158134, guid: 7c5e1b1dd4f706547bd8056be9f1eb13, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ChangeScene, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6446981493101158134, guid: 7c5e1b1dd4f706547bd8056be9f1eb13, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6446981494284817374, guid: 7c5e1b1dd4f706547bd8056be9f1eb13, type: 3}
       propertyPath: m_Name
       value: Main

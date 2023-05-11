@@ -26,6 +26,10 @@ public class MythicScript : MonoBehaviour
     public int hour;
     public int minutes;
     public int seconds;
+    public int hourThreshold = 16;
+
+    //ScriptableObject
+    public UserInfo savedData;
 
     // Start is called before the first frame update
     void Start()
@@ -62,13 +66,22 @@ public class MythicScript : MonoBehaviour
         timeLabel.text = "" + fhours + ":" + fminutes + AMPM; //+ ":" + seconds;
     }
 
+    // 12:00 last check in was at 8:00 am
+
     void checkTime()
     {
-        /*
-        string time = System.DateTime.UtcNow.ToLocalTime().ToString("dd-MM-yyyy   HH:mm");
-        string timeUS = System.DateTime.UtcNow.ToLocalTime().ToString("M/d/yy   hh:mm tt");
-        largeText.text = time + "[breaktag]" + timeUS;
-        */
+        Debug.Log("Time since last Check In: " + (savedData.lastHour - DateTime.Now.Hour).ToString());
+        if((savedData.lastHour - DateTime.Now.Hour) < hourThreshold)
+            Debug.Log("Less than Threshold " + hourThreshold.ToString());
+        else
+            Debug.Log("More than Threshold " + hourThreshold.ToString());
+    }
+
+    void setTime() //called on the button press
+    {
+        savedData.lastHour = hour;
+        savedData.lastMinute = minutes;
+        savedData.lastSecond = seconds;
     }
 /*
     public IEnumerator Updatetime(bool active)
