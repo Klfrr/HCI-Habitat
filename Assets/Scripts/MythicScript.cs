@@ -18,9 +18,14 @@ public class MythicScript : MonoBehaviour
 
     // 
     public int points = 0;
+    public int repetitions;
+
+    //time
     public Text timeLabel;
     public Text dateLabel;
-    public int repetitions;
+    public int hour;
+    public int minutes;
+    public int seconds;
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +36,30 @@ public class MythicScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Updatetime();
+        dateLabel.text = DateTime.Now.ToLongDateString();
+
+        hour = DateTime.Now.Hour;
+        string fhours;
+        string AMPM;
+        if(hour > 12)
+        {
+            fhours = "0" + (hour%12).ToString(); 
+            AMPM = " PM";
+        }else{
+            fhours = hour.ToString();
+            AMPM = " AM";
+        }
+
+        minutes = DateTime.Now.Minute;
+        string fminutes;
+        if(minutes < 10)
+        {
+            fminutes = "0" + minutes.ToString();
+        }else{
+            fminutes = minutes.ToString();
+        }
+        seconds = DateTime.Now.Second;
+        timeLabel.text = "" + fhours + ":" + fminutes + AMPM; //+ ":" + seconds;
     }
 
     void checkTime()
@@ -42,18 +70,16 @@ public class MythicScript : MonoBehaviour
         largeText.text = time + "[breaktag]" + timeUS;
         */
     }
-
-    public IEnumerator Updatetime()
+/*
+    public IEnumerator Updatetime(bool active)
     {
-        while(true)
+        while(active)
             {
-                var today = System.DateTime.Now;
-                dateLabel.text = today.ToString("MM-dd-yyyy");
-                timeLabel.text = today.ToString("HH:mm");
+                
                 yield return new WaitForSeconds(0.2f); 
             }
     }
-
+*/
     public void addHappiness(float num = dHappiness)
     {
         happiness += num;

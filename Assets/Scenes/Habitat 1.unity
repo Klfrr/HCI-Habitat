@@ -284,9 +284,12 @@ MonoBehaviour:
   hunger: 0
   thirst: 0
   points: 0
-  time: {fileID: 0}
-  date: {fileID: 0}
   repetitions: 0
+  timeLabel: {fileID: 6446981492410112364}
+  dateLabel: {fileID: 6446981492410112363}
+  hour: 0
+  minutes: 0
+  seconds: 0
 --- !u!1 &694351960
 GameObject:
   m_ObjectHideFlags: 0
@@ -1182,6 +1185,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c5e1b1dd4f706547bd8056be9f1eb13, type: 3}
+--- !u!114 &6446981492410112363 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6474734873284948227, guid: 7c5e1b1dd4f706547bd8056be9f1eb13, type: 3}
+  m_PrefabInstance: {fileID: 6446981492410112362}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6446981492410112364 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3619866100549034, guid: 7c5e1b1dd4f706547bd8056be9f1eb13, type: 3}
+  m_PrefabInstance: {fileID: 6446981492410112362}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &6499099438304441593
 RectTransform:
   m_ObjectHideFlags: 0
