@@ -243,6 +243,9 @@ MonoBehaviour:
   happiness: 0
   hunger: 0
   thirst: 0
+  happinessBar: {fileID: 0}
+  happinessUp: {fileID: 0}
+  happinessDown: {fileID: 0}
   points: 0
   repetitions: 0
   timeLabel: {fileID: 0}
@@ -578,6 +581,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9413829ecd48b04e8bc6d2334b7ef3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  savedInfo: {fileID: 0}
 --- !u!1 &929129971
 GameObject:
   m_ObjectHideFlags: 0
