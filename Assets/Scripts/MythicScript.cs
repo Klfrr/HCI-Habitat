@@ -3,24 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
+//Kalista: Mythic script handles 
 
 public class MythicScript : MonoBehaviour
 {
     // Variables from 0 - 1
-    public float happiness;
-    public float hunger;
-    public float thirst;
+    public float happiness = 1;
+    public float hunger = 1;
+    public float thirst = 1;
 
     // How much the stats should change
     public const float dHunger = 5.0f;
     public const float dHappiness = 5.0f;
     public const float dThirst = 5.0f;
+    public Slider happinessBar;
+    public Button happinessUp;
+    public Button happinessDown;
 
-    // 
+    // tracks times the task is done
     public int points = 0;
     public int repetitions;
 
-    //time
+    //time variables
     public Text timeLabel;
     public Text dateLabel;
     public int hour;
@@ -34,10 +40,13 @@ public class MythicScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        // happiness = savedData.happiness;
+        happiness = 1;
+        UpdateBar();
     }
 
     // Update is called once per frame
+    // Updates the real time clock
     void Update()
     {
         dateLabel.text = DateTime.Now.ToLongDateString();
@@ -64,6 +73,15 @@ public class MythicScript : MonoBehaviour
         }
         seconds = DateTime.Now.Second;
         timeLabel.text = "" + fhours + ":" + fminutes + AMPM; //+ ":" + seconds;
+
+        UpdateBar();
+        //deathScenario(happiness);
+    }
+
+    // Updates the happiness bar for the mythic
+    public void UpdateBar()
+    {
+        happinessBar.value = happiness;
     }
 
     // 12:00 last check in was at 8:00 am
@@ -96,11 +114,13 @@ public class MythicScript : MonoBehaviour
     public void addHappiness(float num = dHappiness)
     {
         happiness += num;
+        deathScenario(happiness);
     }
 
-    void removeHappiness(float num = dHappiness)
+    public void removeHappiness(float num = dHappiness)
     {
         happiness -= num;
+        deathScenario(happiness);
     }
 
     public void addHunger(float num = dHunger)
@@ -108,7 +128,7 @@ public class MythicScript : MonoBehaviour
         hunger += num;
     }
 
-    void removeHunger(float num = dHunger)
+    public void removeHunger(float num = dHunger)
     {
         hunger -= num;
     }
@@ -118,16 +138,17 @@ public class MythicScript : MonoBehaviour
         thirst += num;
     }
 
-    void removeThirst(float num = dThirst)
+    public void removeThirst(float num = dThirst)
     {
         thirst -= num;
     }
 
+    // Move to Death Screen scene when the happiness is less than or equal to 0
     void deathScenario(float stat)
     {
         if(stat <= 0)
         {
-            //move screen to death screen
+            SceneManager.LoadScene("Death Screen");
         }
     }
 
@@ -136,7 +157,7 @@ public class MythicScript : MonoBehaviour
         if(growth == repetitions)
         {
             //give Player money
-            //move screen to Catalog screen
+            
         }
     }
 
