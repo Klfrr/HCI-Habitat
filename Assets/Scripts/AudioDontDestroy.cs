@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // keeps volume outside of scene using DontDestroyOnLoad
+// abida mim
+// allows music to keep playing past scene changes
 public class AudioDontDestroy : MonoBehaviour
 {
 
