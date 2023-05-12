@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Abida Mim
+
+// Based on which buttons are pushed, UI elements are toggled on and off
 public class AddHabit : MonoBehaviour
 {
     [SerializeField]
