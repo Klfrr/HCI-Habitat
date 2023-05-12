@@ -130,6 +130,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1559807842}
     m_Modifications:
+    - target: {fileID: 1062824550656352472, guid: bf6a7f469d2dd2b459728c72a953a844, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 751411636}
+    - target: {fileID: 1062824550656352472, guid: bf6a7f469d2dd2b459728c72a953a844, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 1062824550656352472, guid: bf6a7f469d2dd2b459728c72a953a844, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Succeed Screen
+      objectReference: {fileID: 0}
     - target: {fileID: 5756778408102606661, guid: bf6a7f469d2dd2b459728c72a953a844, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
