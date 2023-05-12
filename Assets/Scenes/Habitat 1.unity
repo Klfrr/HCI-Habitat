@@ -291,8 +291,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 760a3c0769afb7c458c25dd46f66d392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  habit_input: {fileID: 885348664}
+  habit_output: {fileID: 885348664}
   input_box: {fileID: 1912893876}
+  savedData: {fileID: 11400000, guid: 86b4e6ef19e31004daefe31843180b39, type: 2}
 --- !u!114 &352394012 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6527502748823431871, guid: 7c5e1b1dd4f706547bd8056be9f1eb13, type: 3}
@@ -554,6 +555,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9413829ecd48b04e8bc6d2334b7ef3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  savedInfo: {fileID: 0}
 --- !u!114 &885348664 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6446981492868819420, guid: 7c5e1b1dd4f706547bd8056be9f1eb13, type: 3}

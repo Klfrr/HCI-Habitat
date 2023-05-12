@@ -410,8 +410,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 760a3c0769afb7c458c25dd46f66d392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  habit_input: {fileID: 1811262224}
+  habit_output: {fileID: 1811262224}
   input_box: {fileID: 1220502108}
+  savedData: {fileID: 11400000, guid: 86b4e6ef19e31004daefe31843180b39, type: 2}
 --- !u!114 &280319689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -752,6 +753,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9413829ecd48b04e8bc6d2334b7ef3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  savedInfo: {fileID: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
