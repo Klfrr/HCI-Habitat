@@ -33,7 +33,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Mythic Catalog.unity
     guid: c95a43e6b51dc26479c14929361935a1
   - enabled: 1
-    path: Assets/Scenes/Mythic Info.unity
+    path: Assets/Scenes/Sphinx Info.unity
     guid: 44b321d81d26ce04197979f3a818e433
   - enabled: 1
     path: Assets/Scenes/Shop.unity
