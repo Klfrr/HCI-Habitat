@@ -13,6 +13,11 @@ public class SetHabit : MonoBehaviour
 
     public UserInfo savedData;
 
+    private void Start()
+    {
+        habit_output.text = savedData.habitString;
+    }
+
     public void setHabitName()
     {
         savedData.habitString = input_box.text;
