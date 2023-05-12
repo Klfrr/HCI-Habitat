@@ -555,7 +555,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9413829ecd48b04e8bc6d2334b7ef3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savedInfo: {fileID: 0}
+  savedInfo: {fileID: 11400000, guid: 86b4e6ef19e31004daefe31843180b39, type: 2}
 --- !u!114 &885348664 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6446981492868819420, guid: 7c5e1b1dd4f706547bd8056be9f1eb13, type: 3}
@@ -1005,7 +1005,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6446981492868819420, guid: 7c5e1b1dd4f706547bd8056be9f1eb13, type: 3}
       propertyPath: m_Text
-      value: Habit
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6446981492868819423, guid: 7c5e1b1dd4f706547bd8056be9f1eb13, type: 3}
       propertyPath: m_SizeDelta.x
