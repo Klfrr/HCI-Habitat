@@ -18,4 +18,7 @@ public class UserInfo : ScriptableObject
 
     [SerializeField]
     public int lastSecond;
+
+    [SerializeField]
+    public int habitat;
 }

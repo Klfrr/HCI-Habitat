@@ -725,8 +725,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1072684080}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 5
+        m_MethodName: LoadHabitat
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -853,6 +853,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9413829ecd48b04e8bc6d2334b7ef3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  savedInfo: {fileID: 11400000, guid: 86b4e6ef19e31004daefe31843180b39, type: 2}
 --- !u!1 &1147476998
 GameObject:
   m_ObjectHideFlags: 0
@@ -995,7 +996,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Main Menu
+  m_text: Back
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e42c679934aeccd4da557100a6f06e47, type: 2}
   m_sharedMaterial: {fileID: -2721525056397434705, guid: e42c679934aeccd4da557100a6f06e47, type: 2}
