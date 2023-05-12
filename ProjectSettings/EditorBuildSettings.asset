@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Habitat 1.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 0
-    path: Assets/Scenes/ChooseScene.unity
+    path: 
     guid: 78901217c3bcd8744933c965ca48a462
   - enabled: 1
     path: Assets/Scenes/Habitat 2.unity
@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Death Screen.unity
     guid: b892b91f30ffd9f44818d5ec98ab9630
   - enabled: 0
-    path: Assets/Scenes/Add Habit.unity
+    path: 
     guid: 1599bdb318331b8469632320d893c509
   - enabled: 1
     path: Assets/Scenes/ChooseMythic.unity
@@ -38,4 +38,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Shop.unity
     guid: 3135508e9fedb0b4b91192b01ba34c6a
+  - enabled: 1
+    path: Assets/Scenes/Ouroboros Info.unity
+    guid: 7618535150f92eb45afd375bcb4a5f3a
+  - enabled: 1
+    path: Assets/Scenes/Succeed Screen.unity
+    guid: e091c73b5509c524fb8fc2785e8c1dca
   m_configObjects: {}
